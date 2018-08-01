@@ -850,7 +850,7 @@ pca.train$TARGET <- as.factor(pca.train$TARGET)
 
 control <- trainControl(method="repeatedcv", number=2, repeats=1)
 # training the model
-model <- train(TARGET ~ PC8, data=pca.train, method="gbm",verbose=F, trControl=control)
+model <- train(TARGET ~ , data=pca.train, method="gbm",verbose=F, trControl=control)
 
 print(model)
 
